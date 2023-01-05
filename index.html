@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=UTF-8">
+        <title>Converter: Hryvnia to Dollars</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+<h2>Money Converter</h2>
+
+<p>
+  <label>UAH</label>
+  <input id="inputUAH" type="number" placeholder="UAH" oninput="MoneyConverter(this.value)" onchange="MoneyConverter(this.value)">
+</p>
+
+<p>
+    USD: <span id="outputUSD"></span>
+</p>
+
+<script>
+function MoneyConverter(valNum) {
+  document.getElementById("outputUSD").innerHTML=valNum*0.027;}
+</script>
+
+</body>
+</html>
